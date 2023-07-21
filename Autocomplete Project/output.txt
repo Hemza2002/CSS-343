@@ -1,0 +1,442 @@
+Sat Apr 15 02:02:43 UTC 2023
+Linux LinuxMachine 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. Runs and produces correct output
+=====================================================
+Starting test01
+* Testing ==, !=, [] and copy constructor
+Ending tes01
+Starting test02
+* Testing traversal
+        [z=50]
+    [x=10]
+        [f=5]
+                [e=4]
+            [b=3]
+
+Ending test02
+Starting test03
+* Testing rebalance
+                        [6=6]
+                    [5=5]
+                [4=4]
+            [3=3]
+        [2=2]
+    [1=1]
+
+
+            [6=6]
+        [5=5]
+            [4=4]
+    [3=3]
+            [2=2]
+        [1=1]
+
+
+Ending test03
+Starting test04
+* Testing for count, empty, clear ,contains and size,
+                    [eggs=11]
+                [dates=9]
+            [carrots=7]
+        [banana=5]
+    [apple=3]
+
+
+Ending test04
+Starting test05
+* Testing for getAll()
+                [Turkey=16]
+            [Switzerland=13]
+        [Seoul=11]
+    [Seattle=9]
+            [San Juan=8]
+        [San Diego=7]
+            [Sacremento=5]
+                [Dubai=2]
+
+
+Testing for only cities that start with 'Sa'
+        [San Juan=8]
+    [San Diego=7]
+        [Sacremento=5]
+
+
+Ending test05
+Starting test06
+* Testing BSTMap(const vector<value_type> &v)
+        [panther=15]
+    [parrot=3]
+        [parakeet=1]
+
+
+Ending test06
+Starting test07
+* Testing erase function
+                        [5=5]
+                    [4=4]
+                [3=3]
+            [2=2]
+        [1=1]
+    [0=0]
+
+
+                    [5=5]
+                [4=4]
+            [3=3]
+        [2=2]
+    [1=1]
+
+
+    [5=5]
+
+
+Ending test07
+Starting test08
+* Testing copy constructor function
+    [strawberry=21]
+        [cherry=7]
+            [apple=3]
+
+
+Ending test08
+Starting AC test01
+* Testing basic autocomplete
+Ending tesAC01
+Starting AC test02
+* Testing cities autocomplete
+Ending tesAC02
+Starting AC test03
+* Testing wiktionary autocomplete
+Ending tesAC03
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+17447 warnings generated.
+46727 warnings generated.
+63504 warnings generated.
+80447 warnings generated.
+94677 warnings generated.
+109184 warnings generated.
+Suppressed 109184 warnings (109184 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./autocomplete.cpp
+Running clang-format on ./bstmap.cpp
+Running clang-format on ./bstmapprinter.cpp
+Running clang-format on ./main.cpp
+12c12
+< //void testReadCities();
+---
+> // void testReadCities();
+17c17
+<   //testReadCities();
+---
+>   // testReadCities();
+47c47
+<     //testReadCities();
+---
+>     // testReadCities();
+Running clang-format on ./testac.cpp
+Running clang-format on ./testbst.cpp
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+==6960== Memcheck, a memory error detector
+==6960== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==6960== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==6960== Command: ./a.out
+==6960== Parent PID: 6635
+==6960== 
+==6960== 
+==6960== HEAP SUMMARY:
+==6960==     in use at exit: 0 bytes in 0 blocks
+==6960==   total heap usage: 582,108 allocs, 582,108 frees, 33,561,157 bytes allocated
+==6960== 
+==6960== All heap blocks were freed -- no leaks are possible
+==6960== 
+==6960== For lists of detected and suppressed errors, rerun with: -s
+==6960== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+=====================================================
+7. Tests have full code coverage
+=====================================================
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/autocomplete.cpp':
+Name                                                                                                                                                                                                                                                 Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Autocomplete::readFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                             7       1  85.71%        22       2  90.91%         4       1  75.00%
+Autocomplete::sortByWeight(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>&)         1       0 100.00%         3       0 100.00%         0       0   0.00%
+Autocomplete::complete(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                       1       0 100.00%         5       0 100.00%         0       0   0.00%
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                      9       1  88.89%        30       2  93.33%         4       1  75.00%
+
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/bstmap.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+BSTMap::BSTMap(BSTMap const&)                                                                                                                                                                                                                                                                                                                                                                     1       0 100.00%         1       0 100.00%         0       0   0.00%
+BSTMap::BSTMap(std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > const&)                                                                                                                        1       0 100.00%         7       0 100.00%         0       0   0.00%
+BSTMap::sortByWeight(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>&, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>&)                                                                                                                                                      1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::~BSTMap()                                                                                                                                                                                                                                                                                                                                                                                 1       0 100.00%         1       0 100.00%         0       0   0.00%
+BSTMap::clear()                                                                                                                                                                                                                                                                                                                                                                                   4       0 100.00%         7       0 100.00%         2       0 100.00%
+BSTMap::empty() const                                                                                                                                                                                                                                                                                                                                                                             1       0 100.00%         1       0 100.00%         0       0   0.00%
+BSTMap::size() const                                                                                                                                                                                                                                                                                                                                                                              1       0 100.00%         4       0 100.00%         0       0   0.00%
+BSTMap::contains(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                                                                                                                                                                    1       0 100.00%         4       0 100.00%         0       0   0.00%
+BSTMap::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                        5       1  80.00%         9       2  77.78%         2       0 100.00%
+BSTMap::getAll(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                                                                                                                                                                      1       0 100.00%         5       0 100.00%         0       0   0.00%
+BSTMap::height() const                                                                                                                                                                                                                                                                                                                                                                            1       0 100.00%         4       0 100.00%         0       0   0.00%
+BSTMap::getHeight(BSTMap::Node const*)                                                                                                                                                                                                                                                                                                                                                           15       0 100.00%        25       0 100.00%        12       0 100.00%
+BSTMap::count(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                                                                                                                                                                       1       1   0.00%         3       3   0.00%         0       0   0.00%
+BSTMap::inorder(void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                                                 1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::preorder(void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                                                1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::postorder(void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                                               1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::rebalance()                                                                                                                                                                                                                                                                                                                                                                               1       0 100.00%         8       0 100.00%         0       0   0.00%
+BSTMap::operator==(BSTMap const&) const                                                                                                                                                                                                                                                                                                                                                           1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::operator!=(BSTMap const&) const                                                                                                                                                                                                                                                                                                                                                           1       0 100.00%         3       0 100.00%         0       0   0.00%
+BSTMap::erase(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                                                             1       0 100.00%         5       0 100.00%         0       0   0.00%
+BSTMap::treeHelperFunction(BSTMap::Node*)                                                                                                                                                                                                                                                                                                                                                         7       0 100.00%        15       0 100.00%         6       0 100.00%
+BSTMap::createNewTreeHelperFunction(std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > > const&, int const&, int const&)                                                                           4       0 100.00%        10       0 100.00%         2       0 100.00%
+BSTMap::createNewNode(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)                                                                                                                                                                                                                                                           1       0 100.00%         4       0 100.00%         0       0   0.00%
+BSTMap::sizeHelperFunction(BSTMap::Node*) const                                                                                                                                                                                                                                                                                                                                                   4       0 100.00%         6       0 100.00%         2       0 100.00%
+BSTMap::deleteNodesInTree(BSTMap::Node*)                                                                                                                                                                                                                                                                                                                                                          3       0 100.00%         7       0 100.00%         2       0 100.00%
+BSTMap::searchKeyHelper(BSTMap::Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                                                                                                                                              9       0 100.00%         9       0 100.00%         6       0 100.00%
+BSTMap::insertFunctionHelper(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)                                                                                                                                                                                                                                                   10       4  60.00%        20       9  55.00%         6       3  50.00%
+BSTMap::containsHelperFunction(BSTMap::Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const                                                                                                                                                                                                                                                      10       7  30.00%        12       8  33.33%         6       5  16.67%
+BSTMap::recursiveFunctionHelper(BSTMap::Node*, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)                                                                                                                                                                                                                                 13       0 100.00%        23       0 100.00%         8       1  87.50%
+BSTMap::inorderHelperFunction(BSTMap::Node*, void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                    4       0 100.00%         8       0 100.00%         2       0 100.00%
+BSTMap::preorderHelperFunction(BSTMap::Node*, void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                   4       0 100.00%         8       0 100.00%         2       0 100.00%
+BSTMap::postorderHelperFunction(BSTMap::Node*, void (*)(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)) const                                                                                                                                                                                                                  4       0 100.00%         8       0 100.00%         2       0 100.00%
+BSTMap::saveNode(BSTMap::Node*, std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > >&)                                                                                                             4       0 100.00%         8       0 100.00%         2       0 100.00%
+BSTMap::eraseHelperFunction(BSTMap::Node*, bool&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)                                                                                                                                                                                                                                                        30      13  56.67%        49      23  53.06%        22      12  45.45%
+BSTMap::minimumKeyValue(BSTMap::Node*)                                                                                                                                                                                                                                                                                                                                                            3       3   0.00%         7       7   0.00%         2       2   0.00%
+BSTMap::isSameStructureHelperFunction(BSTMap::Node*, BSTMap::Node*) const                                                                                                                                                                                                                                                                                                                        16       0 100.00%        13       0 100.00%        14       3  78.57%
+BSTMap::getAllHelperFunction(std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> > >&, BSTMap::Node*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)         9       0 100.00%        17       0 100.00%         8       0 100.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                           176      29  83.52%       326      52  84.05%       108      26  75.93%
+
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/bstmapprinter.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+operator<<(std::ostream&, BSTMap::Node const&)                                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         4       0 100.00%         0       0   0.00%
+operator<<(std::ostream&, BSTMap const&)                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%         5       0 100.00%         0       0   0.00%
+BSTMap::printSideways(std::ostream&, BSTMap::Node const*, int)                                                                                                                                                                                                                                                                                                                                    4       0 100.00%        12       0 100.00%         2       0 100.00%
+BSTMap::centeredPrint(std::ostream&, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, char)                                                                                                                                                                                                                                                           4       4   0.00%        11      11   0.00%         2       2   0.00%
+BSTMap::printTreeLevel(std::ostream&, std::queue<BSTMap::Node const*, std::deque<BSTMap::Node const*, std::allocator<BSTMap::Node const*> > >&, int, int, int)                                                                                                                                                                                                                                   11      11   0.00%        34      34   0.00%         8       8   0.00%
+BSTMap::printVertical(std::ostream&, BSTMap::Node*)                                                                                                                                                                                                                                                                                                                                               7       7   0.00%        13      13   0.00%         4       4   0.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                            28      22  21.43%        79      58  26.58%        16      14  12.50%
+
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/main.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+testMain()                                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         4       0 100.00%         0       0   0.00%
+main                                                                                                                                                                                                                                                                                                                                                                                              5       2  60.00%        15       8  46.67%         4       3  25.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                             6       2  66.67%        19       8  57.89%         4       3  25.00%
+
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/testac.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+testAC01()                                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%        13       5  61.54%         0       0   0.00%
+testAC02()                                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%        13       5  61.54%         0       0   0.00%
+testAC03()                                                                                                                                                                                                                                                                                                                                                                                        1       0 100.00%        13       5  61.54%         0       0   0.00%
+testACAll()                                                                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         5       0 100.00%         0       0   0.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                             4       0 100.00%        44      15  65.91%         0       0   0.00%
+
+File '/home/cssuwbstudent/hemzas/2022win343d-autocomplete-Hemza2002/testbst.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+printer(std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, unsigned long> const&)                                                                                                                                                                                                                                                                         1       0 100.00%         3       0 100.00%         0       0   0.00%
+test01()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        19       5  73.68%         0       0   0.00%
+test02()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        24       3  87.50%         0       0   0.00%
+test03()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        19       3  84.21%         0       0   0.00%
+test04()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        17       4  76.47%         0       0   0.00%
+test05()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        21       1  95.24%         0       0   0.00%
+test06()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        17       3  82.35%         0       0   0.00%
+test07()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        24       9  62.50%         0       0   0.00%
+test08()                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%        17       2  88.24%         0       0   0.00%
+testBSTAll()                                                                                                                                                                                                                                                                                                                                                                                      1       0 100.00%        10       0 100.00%         0       0   0.00%
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                            10       0 100.00%       171      30  82.46%         0       0   0.00%
+=====================================================
+The lines below were never executed
+=====================================================
+   17|      0|    throw runtime_error("Failed to open file " + fileName);
+   18|      0|  }
+   74|      0|  assert(false && "operator[] has not been implemented");
+   75|      0|}
+  120|      0|size_t BSTMap::count(const string &k) const {
+  121|      0|  return static_cast<size_t>(containsHelperFunction(root, k));
+  122|      0|}
+  272|      0|  else {
+  273|      0|    Node *newNode = createNewNode(item);
+  274|      0|    if (item.first < curr->data.first) {
+  275|      0|      curr->left = newNode;
+  276|      0|    } else {
+  277|      0|      curr->right = newNode;
+  278|      0|    }
+  279|      0|    curr = newNode;
+  280|      0|  }
+  291|      0|  if (key == n->data.first) {
+  292|      0|    return true;
+  293|      0|  }
+  296|      0|  if (key < n->data.first) {
+  297|      0|    return containsHelperFunction(n->left, key);
+  298|      0|  }
+  301|      0|  return containsHelperFunction(n->right, key);
+  302|      0|}
+  412|      0|      curr = curr->right;
+  413|      0|    }
+  423|      0|      child = curr->left;
+  430|      0|      parent->left = child;
+  431|      0|    } else {
+  432|      0|      parent->right = child;
+  433|      0|    }
+  438|      0|  else {
+  439|      0|    Node *successor = curr->right;
+  440|      0|    parent = curr;
+  441|      0|    while (successor->left != nullptr) {
+  442|      0|      parent = successor;
+  443|      0|      successor = successor->left;
+  444|      0|    }
+  445|      0|    curr->data = successor->data;
+  446|      0|    if (parent == curr) {
+  447|      0|      parent->right = successor->right;
+  448|      0|    } else {
+  449|      0|      parent->left = successor->right;
+  450|      0|    }
+  451|      0|    delete successor;
+  452|      0|    flag = true;
+  453|      0|  }
+  459|      0|BSTMap::Node *BSTMap::minimumKeyValue(Node *n) {
+  460|      0|  Node *current = n;
+  463|      0|  while (current->left != nullptr) {
+  464|      0|    current = current->left;
+  465|      0|  }
+  467|      0|  return current;
+  468|      0|}
+   48|      0|                               char fillChar) {
+   49|      0|  auto strL = static_cast<int>(str.length());
+   50|      0|  int extra = (space - strL) / 2;
+   51|      0|  if (extra > 0) {
+   52|      0|    out << setfill(fillChar) << setw(extra + strL) << str;
+   53|      0|    out << setfill(fillChar) << setw(space - extra - strL) << fillChar;
+   54|      0|  } else {
+   55|      0|    out << setfill(fillChar) << setw(space) << str;
+   56|      0|  }
+   57|      0|  return out;
+   58|      0|}
+   69|      0|                                int depth, int maxDepth) {
+   70|      0|  const static char space = ' ';
+   71|      0|  const static char underline = '_';
+   72|      0|  int nodes = 0;
+   73|      0|  int maxN = static_cast<int>(pow(2, depth - 1));
+   74|      0|  int spaceForEachItem = static_cast<int>(width * pow(2, maxDepth - 1) / maxN);
+   75|      0|  string bigspace = string(static_cast<uint64_t>(spaceForEachItem / 4), space);
+   76|      0|  while (nodes++ < maxN) {
+   77|      0|    const Node *tp = q.front();
+   78|      0|    Node *tpl = nullptr;
+   79|      0|    Node *tpr = nullptr;
+   80|      0|    q.pop();
+   81|      0|    string label = "N";
+   82|      0|    if (tp != nullptr) {
+   83|      0|      stringstream ss;
+   84|      0|      ss << *tp;
+   85|      0|      label = ss.str();
+   86|      0|      tpl = tp->left;
+   87|      0|      tpr = tp->right;
+   88|      0|    }
+   89|      0|    char filler = depth == maxDepth ? space : underline;
+   90|      0|    if (depth == maxDepth) {
+   91|      0|      centeredPrint(out, spaceForEachItem, label, filler);
+   92|      0|    } else {
+   93|      0|      out << bigspace;
+   94|      0|      centeredPrint(out, spaceForEachItem / 2, label, filler);
+   95|      0|      out << bigspace;
+   96|      0|      q.push(tpl);
+   97|      0|      q.push(tpr);
+   98|      0|    }
+   99|      0|  }
+  100|      0|  out << endl;
+  101|      0|  return out;
+  102|      0|}
+  105|      0|ostream &BSTMap::printVertical(ostream &out, Node *curr) {
+  106|      0|  const static int width = 6; // must be even
+  107|      0|  if (curr == nullptr) {
+  108|      0|    return out << "[__]";
+  109|      0|  }
+  111|      0|  int maxDepth = getHeight(curr);
+  112|      0|  queue<const Node *> q;
+  113|      0|  q.push(curr);
+  114|      0|  for (int depth = 1; depth <= maxDepth; ++depth) {
+  115|      0|    printTreeLevel(out, q, width, depth, maxDepth);
+  116|      0|  }
+  117|      0|  return out;
+  118|      0|}
+   37|      0|    Autocomplete ac;
+   38|      0|    string filename = argv[1];
+   39|      0|    string prefix = argv[2];
+   40|      0|    ac.readFile(filename);
+   41|      0|    auto results = ac.complete(prefix);
+   42|      0|    for (auto &p : results) {
+   43|      0|      cout << p.first << "\t" << p.second << endl;
+   44|      0|    }
+   19|      0|  assert(v[0].first == "help");
+   20|      0|  assert(v[0].second == 20);
+   21|      0|  assert(v[1].first == "hello");
+   22|      0|  assert(v[1].second == 10);
+   23|      0|  cout << "Ending tesAC01" << endl;
+   33|      0|  assert(v[0].first == "Seattle, Washington, United States");
+   34|      0|  assert(v[0].second == 608660);
+   35|      0|  assert(v[46].first == "Seabeck, Washington, United States");
+   36|      0|  assert(v[46].second == 1105);
+   37|      0|  cout << "Ending tesAC02" << endl;
+   47|      0|  assert(v[0].first == "through");
+   48|      0|  assert(v[0].second == 79292500);
+   49|      0|  assert(v[8].first == "throws");
+   50|      0|  assert(v[8].second == 951655);
+   51|      0|  cout << "Ending tesAC03" << endl;
+   44|      0|  b1["hello"] = 5;
+   47|      0|  b1["world"] = 42;
+   51|      0|  b2["hello"] = 5;
+   55|      0|  BSTMap b3(b2);
+   57|      0|  cout << "Ending tes01" << endl;
+   77|      0|  globalSS.str("");
+   82|      0|  globalSS.str("");
+   86|      0|  cout << "Ending test02" << endl;
+  101|      0|  cout << b << endl;
+  104|      0|  cout << b << endl;
+  107|      0|  cout << "Ending test03" << endl;
+  116|      0|  assert(b.contains("pineapple") == false);
+  117|      0|  b["apple"] = 3;
+  123|      0|  cout << b << endl;
+  126|      0|  cout << "Ending test04" << endl;
+  145|      0|  b.rebalance();
+  162|      0|  auto v = b.getAll("pa");
+  164|      0|  BSTMap d(v);
+  167|      0|  cout << "Ending test06" << endl;
+  182|      0|  cout << b << endl;
+  184|      0|  cout << b << endl;
+  186|      0|  assert(b.size() == 5);
+  187|      0|  assert(b.erase("1") == true);
+  188|      0|  assert(b.erase("2") == true);
+  189|      0|  assert(b.erase("3") == true);
+  190|      0|  assert(b.erase("4") == true);
+  191|      0|  cout << b << endl;
+  193|      0|  cout << "Ending test07" << endl;
+  209|      0|  BSTMap b3;
+  214|      0|  cout << "Ending test08" << endl;
+Sat Apr 15 02:03:18 UTC 2023
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
