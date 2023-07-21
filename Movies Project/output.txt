@@ -1,0 +1,634 @@
+Tue Jun  6 04:19:55 UTC 2023
+Linux LinuxMachine 5.15.49-linuxkit #1 SMP PREEMPT Tue Sep 13 07:51:32 UTC 2022 aarch64 aarch64 aarch64 GNU/Linux
+uid=1000(cssuwbstudent) gid=1000(cssuwbstudent) groups=1000(cssuwbstudent),10(wheel)
+=====================================================
+1. Compiles without warnings with -Wall -Wextra flags
+=====================================================
+=====================================================
+2. Runs and produces correct output
+=====================================================
+Error: DVD type "Z" is not valid.
+Error: DVD type "Z" is not valid.
+Error: Command is not valid 
+Error: Command is not valid 
+F: Annie Hall (1977). Directed by Woody Allen. 10 left in stock
+F: Sleepless in Seattle (1993). Directed by Nora Ephron. 10 left in stock
+F: Pirates of the Caribbean (2003). Directed by Gore Verbinski. 10 left in stock
+F: When Harry Met Sally (1989). Directed by Rob Reiner. 10 left in stock
+F: Fargo (1996). Directed by Joel Coen. 10 left in stock
+F: National Lampoon's Animal House (1978). Directed by John Landis. 10 left in stock
+D: Barry Levinson (Good Morning Vietnam). Released 1988. 10 left in stock
+D: Clint Eastwood (Unforgiven). Released 1992. 10 left in stock
+D: Gus Van Sant (Good Will Hunting). Released 2000. 10 left in stock
+D: Jonathan Demme (Silence of the Lambs). Released 1991. 10 left in stock
+D: Nancy Savoca (Dogfight). Released 1991. 10 left in stock
+D: Phillippe De Broca (King of Hearts). Released 1967. 10 left in stock
+D: Steven Spielberg (Schindler's List). Released 1993. 10 left in stock
+C: (Acted by Bogart Humphrey). The Maltese Falcon. 10 left in stock. Released: 10 1941
+C: (Acted by Steward James). It's a Wonderful Life. 10 left in stock. Released: 11 1946
+C: (Acted by Leigh Vivien). Gone With the Wind. 10 left in stock. Released: 2 1939
+C: (Acted by McDowell Malcolm). A Clockwork Orange. 10 left in stock. Released: 2 1971
+C: (Acted by Gordon Ruth). Harold and Maude. 10 left in stock. Released: 3 1971
+C: (Acted by Grant Cary). The Philadelphia Story. 10 left in stock. Released: 5 1940
+C: (Acted by Garland Judy). The Wizard of Oz. 10 left in stock. Released: 7 1939
+C: (Acted by Bergman Ingrid). Casablanca. 10 left in stock. Released: 8 1942
+C: (Acted by Hepburn Katherine). Holiday. 10 left in stock. Released: 9 1938
+Transaction Log of Mouse Minnie
+No transactions found.
+Transaction Log of Frog Freddie
+No transactions found.
+Transaction Log of Wacky Wally
+No transactions found.
+F: Annie Hall (1977). Directed by Woody Allen. 9 left in stock
+F: Sleepless in Seattle (1993). Directed by Nora Ephron. 9 left in stock
+F: Pirates of the Caribbean (2003). Directed by Gore Verbinski. 10 left in stock
+F: When Harry Met Sally (1989). Directed by Rob Reiner. 9 left in stock
+F: Fargo (1996). Directed by Joel Coen. 9 left in stock
+F: National Lampoon's Animal House (1978). Directed by John Landis. 9 left in stock
+D: Barry Levinson (Good Morning Vietnam). Released 1988. 10 left in stock
+D: Clint Eastwood (Unforgiven). Released 1992. 10 left in stock
+D: Gus Van Sant (Good Will Hunting). Released 2000. 10 left in stock
+D: Jonathan Demme (Silence of the Lambs). Released 1991. 10 left in stock
+D: Nancy Savoca (Dogfight). Released 1991. 10 left in stock
+D: Phillippe De Broca (King of Hearts). Released 1967. 10 left in stock
+D: Steven Spielberg (Schindler's List). Released 1993. 10 left in stock
+C: (Acted by Bogart Humphrey). The Maltese Falcon. 10 left in stock. Released: 10 1941
+C: (Acted by Steward James). It's a Wonderful Life. 10 left in stock. Released: 11 1946
+C: (Acted by Leigh Vivien). Gone With the Wind. 10 left in stock. Released: 2 1939
+C: (Acted by McDowell Malcolm). A Clockwork Orange. 10 left in stock. Released: 2 1971
+C: (Acted by Gordon Ruth). Harold and Maude. 10 left in stock. Released: 3 1971
+C: (Acted by Grant Cary). The Philadelphia Story. 10 left in stock. Released: 5 1940
+C: (Acted by Garland Judy). The Wizard of Oz. 10 left in stock. Released: 7 1939
+C: (Acted by Bergman Ingrid). Casablanca. 10 left in stock. Released: 8 1942
+C: (Acted by Hepburn Katherine). Holiday. 10 left in stock. Released: 9 1938
+Transaction Log of Mouse Minnie
+No transactions found.
+Transaction Log of Mouse Mickey
+No transactions found.
+Transaction Log of Frog Freddie
+No transactions found.
+Transaction Log of Wacky Wally
+1. National Lampoon's Animal House Borrowed
+Transaction Log of Pig Porky
+1. Annie Hall Borrowed
+2. When Harry Met Sally Borrowed
+Done.
+=====================================================
+3. clang-tidy warnings are fixed
+=====================================================
+11373 warnings generated.
+22746 warnings generated.
+34117 warnings generated.
+46924 warnings generated.
+58297 warnings generated.
+71376 warnings generated.
+84189 warnings generated.
+100687 warnings generated.
+100687 warnings generated.
+Suppressed 100687 warnings (100687 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+=====================================================
+4. clang-format does not find any formatting issues
+=====================================================
+Running clang-format on ./classic.cpp
+Running clang-format on ./comedy.cpp
+Running clang-format on ./command.cpp
+Running clang-format on ./customer.cpp
+Running clang-format on ./drama.cpp
+Running clang-format on ./dvdFactory.cpp
+Running clang-format on ./hashtable.cpp
+Running clang-format on ./main.cpp
+20d19
+< 
+Running clang-format on ./store_test.cpp
+=====================================================
+5. No memory leaks using g++
+=====================================================
+=====================================================
+6. No memory leaks using valgrind, look for "definitely lost" 
+=====================================================
+==2904== Memcheck, a memory error detector
+==2904== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2904== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==2904== Command: ./a.out
+==2904== Parent PID: 2546
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD78: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_right(std::_Rb_tree_node_base*) (stl_tree.h:795)
+==2904==    by 0x40AF1B: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==    by 0x4B4E387: (below main) (libc-start.c:336)
+==2904==  Address 0x4cc30b8 is 24 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x40A0F3: testAll() (main.cpp:316)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD78: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_right(std::_Rb_tree_node_base*) (stl_tree.h:795)
+==2904==    by 0x40AF1B: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==    by 0x4B4E387: (below main) (libc-start.c:336)
+==2904==  Address 0x4cc6278 is 24 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x40A0F3: testAll() (main.cpp:316)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD78: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_right(std::_Rb_tree_node_base*) (stl_tree.h:795)
+==2904==    by 0x40AF1B: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==    by 0x4B4E387: (below main) (libc-start.c:336)
+==2904==  Address 0x4ccb2b8 is 24 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x40A0F3: testAll() (main.cpp:316)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD90: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_left(std::_Rb_tree_node_base*) (stl_tree.h:787)
+==2904==    by 0x40AF2F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1880)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==  Address 0x4cd5d90 is 16 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid free() / delete / delete[] / realloc()
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==  Address 0x4cd5d80 is 0 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD90: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_left(std::_Rb_tree_node_base*) (stl_tree.h:787)
+==2904==    by 0x40AF2F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1880)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==    by 0x4B4E387: (below main) (libc-start.c:336)
+==2904==  Address 0x4cc6270 is 16 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40AF27: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1879)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x40A0F3: testAll() (main.cpp:316)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== Invalid read of size 8
+==2904==    at 0x40BD90: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_S_left(std::_Rb_tree_node_base*) (stl_tree.h:787)
+==2904==    by 0x40AF2F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1880)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x4B62973: __run_exit_handlers (exit.c:108)
+==2904==    by 0x4B62AF3: exit (exit.c:139)
+==2904==    by 0x4B4E387: (below main) (libc-start.c:336)
+==2904==  Address 0x4cc30b0 is 16 bytes inside a block of size 40 free'd
+==2904==    at 0x486B19C: operator delete(void*) (vg_replace_malloc.c:923)
+==2904==    by 0x40ED23: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::deallocate(std::_Rb_tree_node<Dvd*>*, unsigned long) (new_allocator.h:125)
+==2904==    by 0x40E02F: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::deallocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, std::_Rb_tree_node<Dvd*>*, unsigned long) (alloc_traits.h:462)
+==2904==    by 0x40CFEF: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_put_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:592)
+==2904==    by 0x40BDC3: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_drop_node(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:659)
+==2904==    by 0x40AF3F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_erase(std::_Rb_tree_node<Dvd*>*) (stl_tree.h:1881)
+==2904==    by 0x40A4EB: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::~_Rb_tree() (stl_tree.h:972)
+==2904==    by 0x40A46B: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::~set() (stl_set.h:281)
+==2904==    by 0x40A0F3: testAll() (main.cpp:316)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904==  Block was alloc'd at
+==2904==    at 0x4868960: operator new(unsigned long) (vg_replace_malloc.c:422)
+==2904==    by 0x40F7FB: __gnu_cxx::new_allocator<std::_Rb_tree_node<Dvd*> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==2904==    by 0x40F48B: std::allocator_traits<std::allocator<std::_Rb_tree_node<Dvd*> > >::allocate(std::allocator<std::_Rb_tree_node<Dvd*> >&, unsigned long) (alloc_traits.h:436)
+==2904==    by 0x40F00F: std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_get_node() (stl_tree.h:588)
+==2904==    by 0x40E843: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_create_node<Dvd* const&>(Dvd* const&) (stl_tree.h:642)
+==2904==    by 0x40DB63: std::_Rb_tree_node<Dvd*>* std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node::operator()<Dvd* const&>(Dvd* const&) const (stl_tree.h:556)
+==2904==    by 0x40CBA3: std::_Rb_tree_iterator<Dvd*> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_<Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Dvd* const&, std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_Alloc_node&) (stl_tree.h:1776)
+==2904==    by 0x40B9BF: std::pair<std::_Rb_tree_iterator<Dvd*>, bool> std::_Rb_tree<Dvd*, Dvd*, std::_Identity<Dvd*>, std::less<Dvd*>, std::allocator<Dvd*> >::_M_insert_unique<Dvd* const&>(Dvd* const&) (stl_tree.h:2119)
+==2904==    by 0x40AD4F: std::set<Dvd*, std::less<Dvd*>, std::allocator<Dvd*> >::insert(Dvd* const&) (stl_set.h:511)
+==2904==    by 0x4090B3: makeMovies() (main.cpp:216)
+==2904==    by 0x40A0DF: testAll() (main.cpp:311)
+==2904==    by 0x40A10B: main (main.cpp:321)
+==2904== 
+==2904== 
+==2904== HEAP SUMMARY:
+==2904==     in use at exit: 5,637 bytes in 75 blocks
+==2904==   total heap usage: 2,584 allocs, 2,531 frees, 227,438 bytes allocated
+==2904== 
+==2904== LEAK SUMMARY:
+==2904==    definitely lost: 4,576 bytes in 42 blocks
+==2904==    indirectly lost: 1,061 bytes in 33 blocks
+==2904==      possibly lost: 0 bytes in 0 blocks
+==2904==    still reachable: 0 bytes in 0 blocks
+==2904==         suppressed: 0 bytes in 0 blocks
+==2904== Rerun with --leak-check=full to see details of leaked memory
+==2904== 
+==2904== For lists of detected and suppressed errors, rerun with: -s
+==2904== ERROR SUMMARY: 66 errors from 7 contexts (suppressed: 0 from 0)
+=====================================================
+7. Tests have full code coverage
+=====================================================
+./check-code-coverage.sh: line 35:  3058 Aborted                 $EXEC_PROGRAM > /dev/null 2> /dev/null
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/classic.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Classic::Classic(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)         3       0 100.00%         9       0 100.00%         2       1  50.00%
+Classic::getMovieSorting[abi:cxx11]()                                                                                                                                                                                                                                                                                                                             1       0 100.00%         1       0 100.00%         0       0   0.00%
+Classic::getMovieGenre[abi:cxx11]()                                                                                                                                                                                                                                                                                                                               1       0 100.00%         1       0 100.00%         0       0   0.00%
+Classic::getInventoryCount()                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         1       0 100.00%         0       0   0.00%
+Classic::incrementInventory()                                                                                                                                                                                                                                                                                                                                     1       1   0.00%         1       1   0.00%         0       0   0.00%
+Classic::decrementInventory()                                                                                                                                                                                                                                                                                                                                     1       1   0.00%         1       1   0.00%         0       0   0.00%
+Classic::getMovieTitle[abi:cxx11]()                                                                                                                                                                                                                                                                                                                               1       0 100.00%         1       0 100.00%         0       0   0.00%
+Classic::getMovieDirector[abi:cxx11]()                                                                                                                                                                                                                                                                                                                            1       0 100.00%         1       0 100.00%         0       0   0.00%
+Classic::getMovieYear[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                1       1   0.00%         1       1   0.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                            11       3  72.73%        17       3  82.35%         2       1  50.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/comedy.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                        Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Comedy::Comedy(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)                                                                                                                                                                        5       0 100.00%        10       0 100.00%         4       2  50.00%
+Comedy::getMovieSorting[abi:cxx11]()                                                                                                                                                                                                                                                                                                                              1       1   0.00%         1       1   0.00%         0       0   0.00%
+Comedy::getMovieGenre[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                1       0 100.00%         1       0 100.00%         0       0   0.00%
+Comedy::getInventoryCount()                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         1       0 100.00%         0       0   0.00%
+Comedy::incrementInventory()                                                                                                                                                                                                                                                                                                                                      1       1   0.00%         1       1   0.00%         0       0   0.00%
+Comedy::decrementInventory()                                                                                                                                                                                                                                                                                                                                      1       0 100.00%         1       0 100.00%         0       0   0.00%
+Comedy::getMovieTitle[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                1       0 100.00%         1       0 100.00%         0       0   0.00%
+Comedy::getMovieDirector[abi:cxx11]()                                                                                                                                                                                                                                                                                                                             1       0 100.00%         1       0 100.00%         0       0   0.00%
+Comedy::getMovieYear[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                 1       0 100.00%         1       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                            13       2  84.62%        18       2  88.89%         4       2  50.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/command.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                              Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Command::Command(char, int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)         1       0 100.00%         8       0 100.00%         0       0   0.00%
+Command::getType() const                                                                                                                                                                                                                                                                                                                                                1       0 100.00%         1       0 100.00%         0       0   0.00%
+Command::getID() const                                                                                                                                                                                                                                                                                                                                                  1       0 100.00%         1       0 100.00%         0       0   0.00%
+Command::getInv[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                            1       1   0.00%         1       1   0.00%         0       0   0.00%
+Command::getGenre[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                          1       0 100.00%         1       0 100.00%         0       0   0.00%
+Command::getParam1[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                         1       0 100.00%         1       0 100.00%         0       0   0.00%
+Command::getParam2[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                         1       1   0.00%         1       1   0.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                   7       2  71.43%        14       2  85.71%         0       0   0.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/customer.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                              Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Customer::Customer()                                                                                                                                                                                                                                                                                                                                                    1       1   0.00%         5       5   0.00%         0       0   0.00%
+Customer::~Customer()                                                                                                                                                                                                                                                                                                                                                   1       1   0.00%         1       1   0.00%         0       0   0.00%
+Customer::Customer(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                               7       0 100.00%         7       0 100.00%         6       3  50.00%
+Customer::getID() const                                                                                                                                                                                                                                                                                                                                                 1       0 100.00%         3       0 100.00%         0       0   0.00%
+Customer::getFirstName[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                               1       0 100.00%         3       0 100.00%         0       0   0.00%
+Customer::setFirstName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                                                                                                                 1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::getLastName[abi:cxx11]() const                                                                                                                                                                                                                                                                                                                                1       0 100.00%         3       0 100.00%         0       0   0.00%
+Customer::setLastName(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                                                                                                                  1       1   0.00%         3       3   0.00%         0       0   0.00%
+Customer::logBorrow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                                                                                                                    1       0 100.00%         5       0 100.00%         0       0   0.00%
+Customer::logReturn(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                                                                                                                    1       1   0.00%         5       5   0.00%         0       0   0.00%
+Customer::showTransaction()                                                                                                                                                                                                                                                                                                                                             7       0 100.00%        11       0 100.00%         4       0 100.00%
+Customer::getNumberOfTransactions()                                                                                                                                                                                                                                                                                                                                     1       1   0.00%         3       3   0.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                  24       6  75.00%        52      20  61.54%        10       3  70.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/drama.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                              Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Drama::Drama(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, int)                                                                                                                                                                                5       0 100.00%        10       0 100.00%         4       2  50.00%
+Drama::getMovieSorting[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                     1       1   0.00%         1       1   0.00%         0       0   0.00%
+Drama::getMovieGenre[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         1       0 100.00%         0       0   0.00%
+Drama::getInventoryCount()                                                                                                                                                                                                                                                                                                                                              1       0 100.00%         1       0 100.00%         0       0   0.00%
+Drama::incrementInventory()                                                                                                                                                                                                                                                                                                                                             1       1   0.00%         1       1   0.00%         0       0   0.00%
+Drama::decrementInventory()                                                                                                                                                                                                                                                                                                                                             1       1   0.00%         1       1   0.00%         0       0   0.00%
+Drama::getMovieTitle[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                       1       0 100.00%         1       0 100.00%         0       0   0.00%
+Drama::getMovieDirector[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                    1       0 100.00%         1       0 100.00%         0       0   0.00%
+Drama::getMovieYear[abi:cxx11]()                                                                                                                                                                                                                                                                                                                                        1       0 100.00%         1       0 100.00%         0       0   0.00%
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                  13       3  76.92%        18       3  83.33%         4       2  50.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/dvdFactory.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DvdFactory::create(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)        12       0 100.00%        23       0 100.00%         8       0 100.00%
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                                                                                             12       0 100.00%        23       0 100.00%         8       0 100.00%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/hashtable.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HashTable::HashTable()                                                                                                                                                                                                                                                                                                                                                                                                                                                             6       0 100.00%         6       0 100.00%         2       0 100.00%
+HashTable::~HashTable()                                                                                                                                                                                                                                                                                                                                                                                                                                                            7       7   0.00%        11      11   0.00%         4       4   0.00%
+HashTable::insert(Customer*)                                                                                                                                                                                                                                                                                                                                                                                                                                                      14       2  85.71%        23       6  73.91%         8       2  75.00%
+HashTable::get(int)                                                                                                                                                                                                                                                                                                                                                                                                                                                                7       1  85.71%        11       1  90.91%         4       1  75.00%
+HashTable::size() const                                                                                                                                                                                                                                                                                                                                                                                                                                                            7       7   0.00%        11      11   0.00%         4       4   0.00%
+HashTable::remove(int)                                                                                                                                                                                                                                                                                                                                                                                                                                                            10      10   0.00%        19      19   0.00%         6       6   0.00%
+HashTable::printAll()                                                                                                                                                                                                                                                                                                                                                                                                                                                             20      20   0.00%        20      20   0.00%        14      14   0.00%
+HashTable::getAll()                                                                                                                                                                                                                                                                                                                                                                                                                                                                7       7   0.00%        11      11   0.00%         4       4   0.00%
+HashTable::hashFunction(int)                                                                                                                                                                                                                                                                                                                                                                                                                                                       2       0 100.00%         3       0 100.00%         0       0   0.00%
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                                                                                             80      54  32.50%       115      79  31.30%        46      35  23.91%
+
+File '/home/cssuwbstudent/hemzas/343-movies-AElga/main.cpp':
+Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Regions    Miss   Cover     Lines    Miss   Cover  Branches    Miss   Cover
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sortstring(std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)                                                                                                                                                                                                                                                                       9       0 100.00%        11       0 100.00%         6       0 100.00%
+sortc(std::vector<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >&)                                                                                  9       0 100.00%        11       0 100.00%         6       0 100.00%
+readCustomers()                                                                                                                                                                                                                                                                                                                                                                                                                                                                    5       0 100.00%        15       0 100.00%         4       1  75.00%
+inventory()                                                                                                                                                                                                                                                                                                                                                                                                                                                                       16       0 100.00%        48       0 100.00%        20       1  95.00%
+history(Command*)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  1       0 100.00%         3       0 100.00%         0       0   0.00%
+borrow(Command*)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  16       1  93.75%        23       3  86.96%        16       2  87.50%
+remove(Command*)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  13       2  84.62%        19       7  63.16%        14       5  64.29%
+verify(Dvd*)                                                                                                                                                                                                                                                                                                                                                                                                                                                                       8       0 100.00%        11       0 100.00%         6       0 100.00%
+makeMovies()                                                                                                                                                                                                                                                                                                                                                                                                                                                                      14       0 100.00%        33       0 100.00%        12       0 100.00%
+createCommand(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)                                                                                                                                                                                                                                                                                                                                                                                    30       0 100.00%        51       0 100.00%        22       0 100.00%
+doCommands()                                                                                                                                                                                                                                                                                                                                                                                                                                                                      19       1  94.74%        29       2  93.10%        14       1  92.86%
+testAll()                                                                                                                                                                                                                                                                                                                                                                                                                                                                          1       0 100.00%         6       0 100.00%         0       0   0.00%
+main                                                                                                                                                                                                                                                                                                                                                                                                                                                                               1       0 100.00%         5       0 100.00%         0       0   0.00%
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                                                                                                                                                                                                                                                                                                                                                                                                            142       4  97.18%       265      12  95.47%       120      10  91.67%
+=====================================================
+The lines below were never executed
+=====================================================
+   32|      0|void Classic::incrementInventory() { count++; }
+   35|      0|void Classic::decrementInventory() { count--; }
+   44|      0|string Classic::getMovieYear() { return rel; }
+   23|      0|string Comedy::getMovieSorting() { return name + " " + to_string(y); }
+   32|      0|void Comedy::incrementInventory() { count++; }
+   27|      0|string Command::getInv() { return inv; }
+   36|      0|string Command::getParam2() { return par2; }
+    6|      0|Customer::Customer() {
+    7|      0|  ID = 0;
+    8|      0|  firstName = "";
+    9|      0|  lastName = "";
+   10|      0|}
+   12|      0|Customer::~Customer() {}
+   33|      0|void Customer::setFirstName(string firstname) {
+   35|      0|  this->firstName = firstname;
+   36|      0|}
+   43|      0|void Customer::setLastName(string lastName) {
+   45|      0|  this->lastName = lastName;
+   46|      0|}
+   55|      0|void Customer::logReturn(string title) {
+   56|      0|  string transaction;
+   58|      0|  transaction = title + " Returned";
+   59|      0|  log.push_back(transaction);
+   60|      0|}
+   75|      0|int Customer::getNumberOfTransactions() {
+   77|      0|  return log.size();
+   78|      0|}
+   23|      0|string Drama::getMovieSorting() { return direct + " " + name; }
+   32|      0|void Drama::incrementInventory() { count++; }
+   35|      0|void Drama::decrementInventory() { count--; }
+   13|      0|  virtual ~Dvd() = default;
+   14|      0|HashTable::~HashTable() {
+   16|      0|  for (int i = 0; i < HASHTABLESIZE; i++) {
+   17|      0|    Node *current = hashTableArray[i];
+   18|      0|    while (current != nullptr) {
+   19|      0|      Node *temp = current;
+   20|      0|      current = current->next;
+   21|      0|      delete temp;
+   22|      0|    }
+   23|      0|  }
+   24|      0|  delete[] hashTableArray;
+   25|      0|}
+   39|      0|        delete newNode;
+   40|      0|        return false; // Customer with the same ID already exists
+   41|      0|      }
+   45|      0|      delete newNode;
+   46|      0|      return false; // Customer with the same ID already exists
+   47|      0|    }
+   63|      0|  return nullptr;
+   66|      0|int HashTable::size() const {
+   68|      0|  int size = 0;
+   69|      0|  for (int i = 0; i < HASHTABLESIZE; i++) {
+   70|      0|    Node *current = hashTableArray[i];
+   71|      0|    while (current != nullptr) {
+   72|      0|      size++;
+   73|      0|      current = current->next;
+   74|      0|    }
+   75|      0|  }
+   76|      0|  return size;
+   77|      0|}
+   79|      0|bool HashTable::remove(int id) {
+   81|      0|  int index = hashFunction(id);
+   82|      0|  Node *current = hashTableArray[index];
+   83|      0|  Node *prev = nullptr;
+   85|      0|  while (current != nullptr) {
+   86|      0|    if (current->id == id) {
+   87|      0|      if (prev == nullptr) {
+   88|      0|        hashTableArray[index] = current->next;
+   89|      0|      } else {
+   90|      0|        prev->next = current->next;
+   91|      0|      }
+   92|      0|      delete current;
+   93|      0|      return true;
+   94|      0|    }
+   95|      0|    prev = current;
+   96|      0|    current = current->next;
+   97|      0|  }
+   98|      0|  return false;
+   99|      0|}
+  101|      0|void HashTable::printAll() {
+  103|      0|  for (int i = 0; i < HASHTABLESIZE; i++) {
+  104|      0|    Node *current = hashTableArray[i];
+  105|      0|    if (current != nullptr) {
+  106|      0|      string prex = (i < 10) ? "0" : "";
+  107|      0|      cout << "[" << prex << i << "] =>";
+  108|      0|      while (current != nullptr) {
+  109|      0|        string name = current->customer->getFirstName() + " " +
+  110|      0|                      current->customer->getLastName();
+  111|      0|        int space = 18 - name.length();
+  112|      0|        string spacePrex = (space > 0) ? string(space / 2, ' ') : "";
+  113|      0|        string spaceEnd = (space > 0 && space % 2 != 0) ? " " : "";
+  114|      0|        cout << "[" << spacePrex << current->id << " " << name << spaceEnd
+  115|      0|             << "] ";
+  116|      0|        current = current->next;
+  117|      0|      }
+  118|      0|      cout << endl;
+  119|      0|    }
+  120|      0|  }
+  121|      0|}
+  123|      0|vector<Customer *> HashTable::getAll() {
+  125|      0|  vector<Customer *> tmp;
+  126|      0|  for (int i = 0; i < HASHTABLESIZE; i++) {
+  127|      0|    Node *current = hashTableArray[i];
+  128|      0|    while (current != nullptr) {
+  129|      0|      tmp.push_back(current->customer);
+  130|      0|      current = current->next;
+  131|      0|    }
+  132|      0|  }
+  133|      0|  return tmp;
+  134|      0|}
+  143|      0|      cout << "Error: Insuficient inventory to borrow." << endl;
+  144|      0|      return;
+  145|      0|    }
+  160|      0|        cur = d;
+  161|      0|        break;
+  162|      0|      }
+  167|      0|    them = customerTable.get(cmd->getID());
+  168|      0|    them->logReturn(cur->getMovieTitle());
+  169|      0|    cur->incrementInventory();
+  170|      0|  }
+  304|      0|      cout << "Error: Command is not valid." << endl;
+  305|      0|    }
+Tue Jun  6 04:20:26 UTC 2023
+=====================================================
+To create an output.txt file with all the output from this script
+Run the below command
+      ./create-output.sh > output.txt 2>&1 
+=====================================================
