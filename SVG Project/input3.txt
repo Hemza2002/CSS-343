@@ -1,0 +1,11 @@
+triangle 300 150 300 280 200 280 brown
+triangle 300 150 300 280 400 280 brown
+circle 300 275 100 brown
+circle 260 235 25 black
+circle 340 235 25 black
+circle 275 275 30 white
+circle 325 275 30 white
+circle 275 275 10 black
+circle 325 275 10 black
+triangle 295 320 285 340 305 340 black
+triangle 305 320 295 340 315 340 black

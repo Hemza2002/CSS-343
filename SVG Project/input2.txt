@@ -1,0 +1,15 @@
+circle 200 200 150 orange
+circle 200 200 140 white
+circle 200 200 130 orange
+circle 200 200 120 black
+circle 200 200 110 orange
+circle 200 200 100 white
+circle 200 200 90 orange
+circle 200 200 80 black
+circle 200 200 70 orange
+circle 200 200 60 white
+circle 200 200 50 orange
+circle 200 200 40 black
+circle 200 200 30 orange
+circle 200 200 20 white
+circle 200 200 10 orange

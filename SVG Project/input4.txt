@@ -1,0 +1,7 @@
+rectangle 0 0 800 600 skyblue
+rectangle 0 250 800 600 green
+circle 400 250 150 yellow
+circle 400 250 200 orange
+circle 400 250 250 red
+triangle 300 250 500 250 400 100 yellow
+triangle 300 250 500 250 400 400 yellow

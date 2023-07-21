@@ -1,0 +1,9 @@
+rectangle 0 0 1200 800 skyblue
+rectangle 0 400 1200 800 lightgreen
+circle 200 200 100 yellow
+circle 400 150 150 yellow
+circle 700 225 200 yellow
+rectangle 0 600 1200 650 gray
+rectangle 0 650 1200 700 white
+rectangle 0 700 1200 750 gray
+rectangle 0 750 1200 800 white

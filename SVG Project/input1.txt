@@ -1,0 +1,6 @@
+rectangle 100 200 300 200 blue
+triangle 50 200 250 50 450 200 red
+rectangle 150 250 100 150 gray
+rectangle 300 250 100 150 gray
+circle 175 300 25 yellow
+circle 325 300 25 yellow

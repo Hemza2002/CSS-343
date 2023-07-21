@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800" height="800">
+      <rect x="0" y="0" width="800" height="600" fill="skyblue"  />
+      <rect x="0" y="250" width="800" height="600" fill="green"  />
+      <circle cx="400" cy="250" r="150" fill="yellow"  />
+      <circle cx="400" cy="250" r="200" fill="orange"  />
+      <circle cx="400" cy="250" r="250" fill="red"  />
+      <polygon points="300,250 500,250 400,100" fill="yellow" />
+      <polygon points="300,250 500,250 400,400" fill="yellow" />
+</svg>
